@@ -1,25 +1,36 @@
 /*----- constants -----*/
-const kawLookup = {
-   malala: {
-    img: 'images/malala.png';
+kickassWomen = [
+    {
+        name: "malala",
+        img: 'images/malala.png'
+    },
+    {
+        name: "kathrine",
+        img: 'images/'
     }
-    kathrine: {
-        img:
-    }
-}
+]
 
 /*----- app's state (variables) -----*/
-let coins, slotArray, results
+let tokens, slotArray, results
 
 /*----- cached element references -----*/
 
 
 
 /*----- event listeners -----*/
-document.querySelector('main button')
-  .addEventListener('click', playRound);
+document.querySelector('button').addEventListener('click', spin);
 
 
 
 /*----- functions -----*/
+
+function spin() {
+    var sOne = kickassWomen[Math.floor(Math.random() * kickassWomen.length)];
+    var sTwo = kickassWomen[Math.floor(Math.random() * kickassWomen.length)];
+    var sThree = kickassWomen[Math.floor(Math.random() * kickassWomen.length)];
+    console.log(sOne);
+    console.log(sTwo);
+    console.log(sThree);
+}
+
 
