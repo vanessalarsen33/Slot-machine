@@ -1,8 +1,9 @@
 *. {
     box-sizing: border-box;
 }
+
 body {
-    font-family: 'Monoton', cursive;
+    /* font-family: 'Fredericka the Great', cursive; */
     font-size: 8vmin;
     /* background-color: rgb(250, 248, 242);
     color: #343434; */
@@ -13,14 +14,13 @@ body {
 .main {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 4fr 4fr 5fr .6fr 4fr;
+    grid-template-rows: 3fr 4fr 5fr .6fr 4fr;
     grid-template-areas: 
         "a1 t t t a5"
         "z z z z z"
         "c1 slot1 slot2 slot3 c5"
         "d1 d2 d3 d4 d5"
         "e1 t2 t2 t2 e5";
-
     }
 
 #slot1 {
@@ -29,21 +29,25 @@ body {
    border-radius: 10px;
    background-color: rgb(250, 248, 242);
    padding-left: 10px;
+   background-size: cover;
+
 }
 #slot2 {
     grid-area: slot2;
     border: 5px solid #802D30;
     border-radius: 10px;
     background-color: rgb(250, 248, 242);
-
+    background-size: cover;
 }
+
 #slot3 {
     grid-area: slot3;
     border: 5px solid #802D30;
     border-radius: 15px;
     background-color: rgb(250, 248, 242);
-
+    background-size: cover;
 }
+
 #title1 {
     grid-area: z;
     justify-self: center;
@@ -52,22 +56,26 @@ body {
     font-size: 5vh;
     border-radius: 2vh;
     padding: 5vh 3vh;
-
 }
 
 button {
     grid-area: d3;
     justify-self: flex-end;
-    margin-top: 8px;
-    border-radius: 50%;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
     color: #802D30;
-
+    background: rgb(250, 248, 242);
+    border-bottom: solid 5px #802D30;
+    border-radius: 10px 10px 0 0;
+    transition: .4s;
 }
 
 #tokens {
     grid-area: d3;
     justify-self: stretch;
-    margin-top: 2vh;
+    margin-top: 1vh;
     font-size: 1.5vh;
     padding: 1vh 2vh;
 }
