@@ -1,0 +1,84 @@
+*. {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Monoton', cursive;
+    font-size: 8vmin;
+    /* background-color: rgb(250, 248, 242);
+    color: #343434; */
+    background-color: #343434;
+    color: rgb(250, 248, 242);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 4fr 4fr 5fr .6fr 4fr;
+    grid-template-areas: 
+        "a1 t t t a5"
+        "z z z z z"
+        "c1 slot1 slot2 slot3 c5"
+        "d1 d2 d3 d4 d5"
+        "e1 t2 t2 t2 e5";
+
+    }
+
+#slot1 {
+   grid-area: slot1;
+   border: 5px solid #802D30;
+   border-radius: 10px;
+   background-color: rgb(250, 248, 242);
+   padding-left: 10px;
+}
+#slot2 {
+    grid-area: slot2;
+    border: 5px solid #802D30;
+    border-radius: 10px;
+    background-color: rgb(250, 248, 242);
+
+}
+#slot3 {
+    grid-area: slot3;
+    border: 5px solid #802D30;
+    border-radius: 15px;
+    background-color: rgb(250, 248, 242);
+
+}
+#title1 {
+    grid-area: z;
+    justify-self: center;
+    justify-content: center;    
+    border: 2vh double #802D30;
+    font-size: 5vh;
+    border-radius: 2vh;
+    padding: 5vh 3vh;
+
+}
+
+button {
+    grid-area: d3;
+    justify-self: flex-end;
+    margin-top: 8px;
+    border-radius: 50%;
+    color: #802D30;
+
+}
+
+#tokens {
+    grid-area: d3;
+    justify-self: stretch;
+    margin-top: 2vh;
+    font-size: 1.5vh;
+    padding: 1vh 2vh;
+}
+
+#title2 {
+    grid-area: t2;
+    justify-self: center;
+    justify-content: center;    
+    border: 2vh double #802D30;
+    font-size: 5vh;
+    border-radius: 2vh;
+    padding: 5vh 3vh;
+
+}
