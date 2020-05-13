@@ -13,8 +13,8 @@ body {
 
 .main {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 3fr 4fr 5fr .6fr 4fr;
+    grid-template-columns: 2fr 1.3fr 1.3fr 1.3fr 1.5fr;
+    grid-template-rows: 3fr 3fr 40% 5% 3fr;
     grid-template-areas: 
         "a1 t t t a5"
         "z z z z z"
@@ -28,7 +28,6 @@ body {
    border: 5px solid #802D30;
    border-radius: 10px;
    background-color: rgb(250, 248, 242);
-   padding-left: 10px;
    background-size: cover;
 
 }
@@ -38,6 +37,8 @@ body {
     border-radius: 10px;
     background-color: rgb(250, 248, 242);
     background-size: cover;
+    transform-style: preserve-3d;
+
 }
 
 #slot3 {
@@ -49,20 +50,22 @@ body {
 }
 
 #title1 {
-    grid-area: z;
+    grid-area: t;
     justify-self: center;
     justify-content: center;    
     border: 2vh double #802D30;
     font-size: 5vh;
     border-radius: 2vh;
-    padding: 5vh 3vh;
+    padding: 5vh 2vh;
 }
 
 button {
     grid-area: d3;
     justify-self: flex-end;
+    height: 4vh;
     display: inline-block;
     font-weight: bold;
+    margin-top: 20px;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
     color: #802D30;
@@ -76,7 +79,7 @@ button {
     grid-area: d3;
     justify-self: stretch;
     margin-top: 1vh;
-    font-size: 1.5vh;
+    font-size: 2.5vh;
     padding: 1vh 2vh;
 }
 
