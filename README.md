@@ -1,4 +1,4 @@
-<img src="images/logo.png" width=200 display=center/>
+<img src="images/logo.png" width=1000 display=center/>
 
 # Slot Machine 
 
@@ -7,7 +7,7 @@ their struggles and their goals.</p>
 
 ## Screenshot
 _____________
-<img src="images/screenshot.png" width=100 alt="screenshot of game"/>
+<img src="images/screenshot.png" width=300 alt="screenshot of game"/>
 
 <br>
 
