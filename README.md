@@ -1,4 +1,4 @@
-![Slot Machine](/images/logo.png)
+![Slot Machine](/images/readme logo.png)
 
 # slot machine 
 
