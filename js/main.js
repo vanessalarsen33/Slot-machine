@@ -113,13 +113,25 @@ function results(a, b, c){
         alertEl.style.display = 'block';
     } else if (a.name === b.name || b.name === c.name || a.name === c.name) {
         isWinner = 1;
+        // findMatch(a, b, c);
         alertEl.innerHTML = `<h3>YOU GOT A MATCH!</h3>`;
         alertEl.style.display = 'block';
     } else {
         isWinner = 0;
     }
 updateTkn();
+
 };
+
+// function findMatch(a, b, c) {
+//     const women = [];
+//     const counter = new Object();
+//     women.push(a, b, c);
+//     women.forEach(woman) {
+//         counter.woman.name += 1;
+//     }
+//     console.log(women);
+// }
 
 function updateTkn(){
     if (isWinner === 2) {
