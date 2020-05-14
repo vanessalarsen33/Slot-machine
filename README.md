@@ -2,17 +2,16 @@
 
 # Slot Machine 
 
-<p> A fun way to learn about a few of the amazing influential women in history, get a JACKPOT and learn about their accomplishments,
-their struggles and their goals.</p>
+<p> I created this game so that people could have a fun way to learn about a few influential women of history. Each one of these women accompished great things and had many challenges that they overcame. Playing the game you will be able to use the tokens to spin the slot machine in hopes to get a match or JACKPOT. When you get a JACKPOT, three women in a row, you will be learn a small bit about her and her accomplishments.</p>
 
 ## Screenshot
-_____________
+
 <img src="images/screenshot.png" width=300 alt="screenshot of game"/>
 
 <br>
 
 ## Tech used
-___________
+
 * HTML
 * CSS
 * JavaScript
@@ -20,13 +19,13 @@ ___________
 <br>
 
 ## Getting Started 
-_____________
+
 To play this game, click [here]().
 
 <br>
 
 ### Next steps.
-___________
+
 * Make the game responsive for mobile.
 * Add more infuluental women.
 
