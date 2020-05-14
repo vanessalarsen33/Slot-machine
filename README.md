@@ -1,26 +1,32 @@
-![logo](/images/logo.png | width=100)
+<img src="images/logo.png" width=200 display=center/>
 
 # Slot Machine 
 
-<h4> A fun way to learn about a few of the amazing influential women in history, get a JACKPOT and learn about their accomplishments,
-their struggles and their goals.</h4>
+<p> A fun way to learn about a few of the amazing influential women in history, get a JACKPOT and learn about their accomplishments,
+their struggles and their goals.</p>
 
 ## Screenshot
+_____________
+<img src="images/screenshot.png" width=100 alt="screenshot of game"/>
 
-![](/images/screenshot.png/ width=50)
-
+<br>
 
 ## Tech used
-
+___________
 * HTML
 * CSS
 * JavaScript
 
-## Getting Started 
+<br>
 
+## Getting Started 
+_____________
 To play this game, click [here]().
 
+<br>
 
 ### Next steps.
+___________
+* Make the game responsive for mobile.
+* Add more infuluental women.
 
-To make the game responsive for mobile.
