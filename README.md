@@ -20,7 +20,7 @@
 
 ## Getting Started 
 
-To play this game, click [here]().
+To play this game, click [here](https://vanessalarsen33.github.io/Slot-machine/).
 
 <br>
 
