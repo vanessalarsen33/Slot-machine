@@ -1,7 +1,3 @@
-*. {
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 8vmin;
@@ -21,20 +17,20 @@ body {
 }
 #slot1 {
    border: 5px solid #802D30;
-   border-radius: 10px;
+   border-radius: 10px 0 0 10px;
    background-color: rgb(250, 248, 242);
    background-size: cover;
 }
 #slot2 {
     border: 5px solid #802D30;
-    border-radius: 10px;
+    border-radius: 0;
     background-color: rgb(250, 248, 242);
     background-size: cover;
 }
 
 #slot3 {
     border: 5px solid #802D30;
-    border-radius: 15px;
+    border-radius: 0 10px 10px 0;
     background-color: rgb(250, 248, 242);
     background-size: cover;
 }
