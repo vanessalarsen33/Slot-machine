@@ -3,56 +3,53 @@
 }
 
 body {
-    /* font-family: 'Fredericka the Great', cursive; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 8vmin;
-    /* background-color: rgb(250, 248, 242);
-    color: #343434; */
     background-color: #343434;
     color: rgb(250, 248, 242);
 }
-
-.main {
-    display: grid;
-    grid-template-columns: 2fr 1.3fr 1.3fr 1.3fr 1.5fr;
-    grid-template-rows: 3fr 3fr 40% 5% 3fr;
-    grid-template-areas: 
-        "a1 t t t a5"
-        "z z z z z"
-        "c1 slot1 slot2 slot3 c5"
-        "d1 d2 d3 d4 d5"
-        "e1 t2 t2 t2 e5";
-    }
-
+.slots {
+    display: flex;
+    width: 70%;
+    margin: 2% auto;
+    justify-content: space-between;
+}
+.card {
+    height: 40vh;
+    width: 33%;
+    background-color: aliceblue;
+}
 #slot1 {
-   grid-area: slot1;
    border: 5px solid #802D30;
    border-radius: 10px;
    background-color: rgb(250, 248, 242);
    background-size: cover;
-
 }
 #slot2 {
-    grid-area: slot2;
     border: 5px solid #802D30;
     border-radius: 10px;
     background-color: rgb(250, 248, 242);
     background-size: cover;
-    transform-style: preserve-3d;
-
 }
 
 #slot3 {
-    grid-area: slot3;
     border: 5px solid #802D30;
     border-radius: 15px;
     background-color: rgb(250, 248, 242);
     background-size: cover;
 }
-
+.controls {
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
 #title1 {
-    grid-area: t;
-    justify-self: center;
-    justify-content: center;    
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
     border: 2vh double #802D30;
     font-size: 5vh;
     border-radius: 2vh;
@@ -60,36 +57,57 @@ body {
 }
 
 button {
-    grid-area: d3;
-    justify-self: flex-end;
     height: 4vh;
-    display: inline-block;
     font-weight: bold;
-    margin-top: 20px;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
-    color: #802D30;
-    background: rgb(250, 248, 242);
-    border-bottom: solid 5px #802D30;
-    border-radius: 10px 10px 0 0;
+    color:rgb(250, 248, 242);
+    background-color: #343434;
+    border: solid 2px rgb(250, 248, 242);
+    border-radius: 10px 10px;
     transition: .4s;
 }
 
+button:hover {
+    color:  rgb(250, 248, 242);
+    background-color: #802D30;
+    border: solid 2px #802D30;
+}
+
 #tokens {
-    grid-area: d3;
-    justify-self: stretch;
-    margin-top: 1vh;
     font-size: 2.5vh;
-    padding: 1vh 2vh;
 }
 
 #title2 {
-    grid-area: t2;
-    justify-self: center;
-    justify-content: center;    
+    margin: 0 auto;
+    text-align: center;
+    width: 25%;   
     border: 2vh double #802D30;
     font-size: 5vh;
     border-radius: 2vh;
     padding: 5vh 3vh;
 
+}
+
+#winner {
+    display: none;
+    background-color: #802D30;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+#winner h3 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+#winner h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-block-start: .3em;
+    margin-block-end: 1em;
+    padding: 3%;
 }
