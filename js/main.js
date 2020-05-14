@@ -3,7 +3,7 @@ kickassWomen = [
     {
         name: "malala",
         img: 'images/malala.png',
-        fact: "This is Malala Yousufzai. As a young girl she defied the Taliban in Pakistan and demanded that girls be allowed to receive an education. She was shot in the head by a Taliban gunman in 2012 but survived. In 2014, she became the youngest person to receive the Nobel Peace Prize."
+        fact: "This is Malala Yousufzai. As a young girl she defied the Taliban in Pakistan and demanded that girls be allowed to receive an education. She was shot in the head by a Taliban gunman in 2012 but survived. In 2014, she became the youngest person to receive the Nobel Peace Prize.",
     },
     {
         name: "kathrine",
@@ -53,12 +53,10 @@ function play() {
     let sOne = kickassWomen[Math.floor(Math.random() * kickassWomen.length)];
     let sTwo = kickassWomen[Math.floor(Math.random() * kickassWomen.length)];
     let sThree = kickassWomen[Math.floor(Math.random() * kickassWomen.length)];
-    // console.log(sOne, sThree, sTwo)
 playSlots(sOne, sTwo, sThree);
 };
 
 function playSlots(sOne, sTwo, sThree) {
-    // console.log(sOne)
             let slot1Idx = 1;
             let counter1 = 0;
             const playSlot1 = setInterval(function(){
@@ -113,8 +111,7 @@ function results(a, b, c){
         alertEl.style.display = 'block';
     } else if (a.name === b.name || b.name === c.name || a.name === c.name) {
         isWinner = 1;
-        // findMatch(a, b, c);
-        alertEl.innerHTML = `<h3>YOU GOT A MATCH!</h3>`;
+        alertEl.innerHTML = `<h3>YOU GOT A MATCH!</h3><h4>${a.name === b.name || a.name === c.name ? a.fact : b.fact} </h4>`;
         alertEl.style.display = 'block';
     } else {
         isWinner = 0;
@@ -123,15 +120,6 @@ updateTkn();
 
 };
 
-// function findMatch(a, b, c) {
-//     const women = [];
-//     const counter = new Object();
-//     women.push(a, b, c);
-//     women.forEach(woman) {
-//         counter.woman.name += 1;
-//     }
-//     console.log(women);
-// }
 
 function updateTkn(){
     if (isWinner === 2) {
