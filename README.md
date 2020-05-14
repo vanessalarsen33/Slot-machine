@@ -1,4 +1,4 @@
-![logo](/images/logo.png)
+![logo](/images/logo.png | width=100)
 
 # Slot Machine 
 
@@ -7,7 +7,7 @@ their struggles and their goals.</h4>
 
 ## Screenshot
 
-![](/images/screenshot.png/)
+![](/images/screenshot.png/ width=50)
 
 
 ## Tech used
