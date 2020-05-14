@@ -2,7 +2,7 @@
 kickassWomen = [
     {
         name: "malala",
-        img: 'images/malala.png',
+        img: 'images/Malala.png',
         fact: "This is Malala Yousufzai. As a young girl she defied the Taliban in Pakistan and demanded that girls be allowed to receive an education. She was shot in the head by a Taliban gunman in 2012 but survived. In 2014, she became the youngest person to receive the Nobel Peace Prize.",
     },
     {
