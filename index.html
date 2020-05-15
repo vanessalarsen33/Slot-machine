@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="js/main.js"></script>
@@ -11,18 +11,23 @@
 </head>
 <body>
     <div class="main">
-        <h2 id="title1">KICKASS WOMEN</h2>
-        <div id="winner"></div>
+        <h2 id="title1">Kickass Women</h2>
         <div class="slots">
             <div class ="card" id ="slot1"></div>
             <div class ="card" id ="slot2"></div>
             <div class ="card" id ="slot3"></div>
         </div>
-        <div class="controls">
-            <div id= "tokens"></div>
-            <button id="button">SPIN</button>
+        <div id=ctrlBx></div>
+            <div class="controls">
+                <div id= "tokens"></div>
+                <button id="button">SPIN</button>
+            </div>
         </div>
-        <h2 id="title2">OF HISTORY</h2>
+        <div id="winner">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">X
+            </span>
+        </div>
+        <h2 id="title2">Of History</h2>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 </body>
 </html>

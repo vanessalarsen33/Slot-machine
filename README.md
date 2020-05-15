@@ -7,6 +7,8 @@
 ## Screenshot
 
 <img src="images/screenshot.png" width=300 alt="screenshot of game"/>
+<img src="images/screenshot2.png" width=300 alt="screenshot of game"/>
+<img src="images/screenshot2.png" width=250 alt="screenshot of game"/>
 
 <br>
 
