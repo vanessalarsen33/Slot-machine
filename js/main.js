@@ -1,4 +1,3 @@
-/*----- constants -----*/
 kickassWomen = [
     {
         name: "malala",
@@ -38,19 +37,14 @@ kickassWomen = [
     }
 ];
 
-/*----- app's state (variables) -----*/
 let isWinner;
 let startTokens = 10;
 
-/*----- cached element references -----*/
 const alertEl = document.getElementById('winner');
 const tokenEl = document.getElementById('tokens');
 
-
-/*----- event listeners -----*/
 document.querySelector('button').addEventListener('click', play);
 
-/*----- functions -----*/
 init();
 
 function play() {
@@ -59,7 +53,8 @@ function play() {
     let sOne = kickassWomen[Math.floor(Math.random() * kickassWomen.length)];
     let sTwo = kickassWomen[Math.floor(Math.random() * kickassWomen.length)];
     let sThree = kickassWomen[Math.floor(Math.random() * kickassWomen.length)];
-playSlots(sOne, sTwo, sThree);
+
+    playSlots(sOne, sTwo, sThree);
 };
 
 function playSlots(sOne, sTwo, sThree) {
@@ -113,19 +108,18 @@ function playSlots(sOne, sTwo, sThree) {
 function results(a, b, c){
     if (a.name === b.name && b.name === c.name) {
         isWinner = 2;
+        new Audio('sound/jackpot.mp3').play()
         alertEl.innerHTML = `<h3>JACKPOT!</h3><h4>${a.fact}</h4>`;
         alertEl.style.display = 'block';
     } else if (a.name === b.name || b.name === c.name || a.name === c.name) {
         isWinner = 1;
-        alertEl.innerHTML = `<h3>YOU GOT A MATCH!</h3><h4>${a.name === b.name || a.name === c.name ? a.match : b.match} Keep playing to learn more!!</h4>`;
+        alertEl.innerHTML = `<h3>YOU GOT A MATCH!</h3><h4>${a.name === b.name || a.name === c.name ? a.match : b.match}: Keep playing to learn more!!</h4>`;
         alertEl.style.display = 'block';
     } else {
         isWinner = 0;
     }
 updateTkn();
-
 };
-
 
 function updateTkn(){
     if (isWinner === 2) {
@@ -150,4 +144,4 @@ function allowPLay(){
 function init(){
     startTokens;
     tokenEl.innerHTML = `You Have ${startTokens} Tokens` ;
-}
+};
