@@ -3,25 +3,25 @@ kickassWomen = [
         name: "malala",
         img: 'images/Malala.png',
         fact: "This is Malala Yousufzai. As a young girl she defied the Taliban in Pakistan and demanded that girls be allowed to receive an education. She was shot in the head by a Taliban gunman in 2012 but survived. In 2014, she became the youngest person to receive the Nobel Peace Prize.",
-        match: "This is Malala Yousufzai."
+        match: "This is Malala Yousufzai"
     },
     {
         name: "kathrine",
         img: 'images/kathrine.png',
         fact: "This is Katherine Johnson. She was an American mathematician whose calculations of orbital mechanics as a NASA employee were critical to the success of the first and subsequent U.S. crewed spaceflights",
-        match: "This is Katherine Johnson."
+        match: "This is Katherine Johnson"
     },
     {
         name: "rosa",
         img: 'images/rosa.png',
         fact: "This is Rosa Parks. She was a civil rights activist who refused to surrender her seat to a white passenger on a segregated bus in Montgomery, Alabama. Her defiance sparked the Montgomery Bus Boycott. Its success launched nationwide efforts to end racial segregation of public facilities.",
-        match: "This is Rosa Parks."
+        match: "This is Rosa Parks"
     },
     {
         name: "maya",
         img: 'images/maya.png',
         fact: "This is Maya Angelou. She was an American author, poet and civil rights activist best known for her 1969 memoir, I Know Why the Caged Bird Sings, which made literary history as the first nonfiction bestseller by an African American woman.",
-        match: "This is Maya Angelou."
+        match: "This is Maya Angelou"
     },
     {
         name: "ruth",
@@ -33,7 +33,7 @@ kickassWomen = [
         name: "yuri",
         img: 'images/yuri1.png',
         fact: "This is Yuri Kochiyama. She was a tireless political activist who dedicated her life to contributing to social change through her participation in social justice and human rights movements",
-        match: "This Is Yuri Kochiyama."
+        match: "This Is Yuri Kochiyama"
     }
 ];
 

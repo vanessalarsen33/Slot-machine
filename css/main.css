@@ -70,7 +70,7 @@ body {
     font-size: 8vh;
     font-weight: lighter;
     border-radius: 80% 80% 0 0;
-    padding: 5vh 1vh 3vh;
+    padding: 5vh 1vh 5vh;
     height: 80px;
     background-color: #802D30;
 }
@@ -105,9 +105,9 @@ button:hover {
     text-align: center;
     width: 54%;
     border: 2vh double #343434;
-    font-size: 5vh;
+    font-size: 6vh;
     font-weight: lighter;
-    padding: 3vh 0vh 3vh;
+    padding: 2vh 0vh 5vh;
     height: 64px;
     background-color: #802D30;
 }
